@@ -79,6 +79,14 @@ p {
   width:90%;
 }
 
+.imgCaption {
+  font-family: 'Roboto Black';
+  font-size: 22px; 
+  color: #6DA6D0;
+  text-align: left;
+  margin-left: 25px; 
+}
+
 #content {
   top: 172px; 
   left: 0px;
@@ -92,6 +100,7 @@ p {
 #welcomeMessage {
   text-align: left;
   color: #6DA6D0;
-  font-family: 'Roboto';
-  font-size: 20px;
+  font-family: 'Roboto Black';
+  font-size: 25px;
+  margin-left: 20px; 
 }
