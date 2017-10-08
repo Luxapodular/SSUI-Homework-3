@@ -1,6 +1,5 @@
 
 body{
-  font-family: 'Roboto';
   text-align: center;
   width: 40%;
   margin: auto;
@@ -27,6 +26,7 @@ body{
 
 #brandLogo { 
   float:left;
+  padding-top:5px;
 }
 
 #shoppingCart {
@@ -48,7 +48,8 @@ p {
 }
 
 .barButton {
-    font-family: 'Roboto Black'; 
+    font-family: 'Roboto'; 
+    font-style: 'Black';
     background-color: #6DA6D0; 
     border-style: solid;
     border-color: #0F3047;
@@ -62,4 +63,35 @@ p {
     display: inline-block;
     font-size: 25pt; 
     float:right;
+}
+
+.flex-grid-thirds {
+  display: flex;
+}
+.flex-grid-thirds .col {
+  width: 30%;
+  flex: 1;
+  margin: 10px; 
+  margin-left:0px;
+}
+
+.homeImg {
+  width:90%;
+}
+
+#content {
+  top: 172px; 
+  left: 0px;
+  width:1366px;
+  position: absolute; 
+  margin: 60px;
+  margin-top: 0px; 
+  margin-left:30px; 
+}
+
+#welcomeMessage {
+  text-align: left;
+  color: #6DA6D0;
+  font-family: 'Roboto';
+  font-size: 20px;
 }
