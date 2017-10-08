@@ -1,0 +1,23 @@
+.flex-grid-quad {
+  display: flex;
+}
+
+.flex-grid-quad .col {
+  width: 48%;
+  flex: 1; 
+  margin: 10px;
+  margin-right:30px;
+}
+
+.flex-grid-quad .row {
+  height: 100px;
+  flex: 1; 
+  margin: 10px;
+  background-color:#6DA6D0; 
+}
+
+.productLineImg {
+  width: 100px;
+  height: 100px; 
+  float: left; 
+}
