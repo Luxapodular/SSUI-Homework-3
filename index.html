@@ -2,22 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My Awesome Store</title>
+  <title>Muddy Paws Adventure Gear</title>
 
   <!--The following line loads in your CSS style sheet-->
   <link rel="stylesheet" href="styles/index.css">
 
-  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
-  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <!--The following line loads in your JS script-->
-  <script src="js/todo.js"></script>
+  <script src="js/shopping.js"></script>
 </head>
 
 <body>
-  <h1>Welcome to my store!</h1>
-  <p>This store sells all kinds of items. We have old items and new items. Some items are more expensive than others.</p>
-  <img src="./resources/images/whatsInStore.png" class="starterImage" alt="a picture of a box that says what's in store for your store"></img>
-  <p>Feel free to delete this content! This is only to put down some html tags and css to get you started.</p>
+  <div id="topHeader">
+    <a href="/index.html">
+      <img id="brandLogo" src="assets/icons/brand.png" alt="Muddy Paws Brand Logo"/>
+    </a>
+  </div>
+  <div id="productBar">
+    <a href="pages/cart.html">
+      <img id="shoppingCart" src="assets/icons/cart.png" alt="cart" href="/shoppingCart.html"/>
+    </a>
+    <a href="pages/products.html">
+      <button class="barButton" id="buttonProducts" type="button">Products</button>
+    </a>
+    <a href="/index.html">
+      <button class="barButton" id="buttonHome" type="button">Home</button>
+    </a>
+  </div>
 </body>
 </html>

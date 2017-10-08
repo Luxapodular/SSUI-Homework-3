@@ -1,15 +1,43 @@
 
 body{
+  font-family: 'Roboto';
   text-align: center;
   width: 40%;
   margin: auto;
+  background-color: #0F3047;
 }
 
-h1 {
-  font-family: 'Bad Script', cursive;
-  color: orangered;
+#topHeader {
+  background-color: #2C85C7;
+  height: 126px; 
+  width: 100%; 
+  top: 0px; 
+  left:0px; 
+  position:absolute; 
 }
 
+#productBar {
+  background-color: #6DA6D0;
+  height: 46px; 
+  width: 100%; 
+  top:100px; 
+  left: 0px; 
+  position: absolute;
+}
+
+#brandLogo { 
+  float:left;
+}
+
+#shoppingCart {
+  height:46px; 
+  width:46px; 
+  float:right;
+  padding-right:10px;
+  padding-left:4px;
+  border-left: solid 2px;
+  border-color: #0F3047;
+}
 p {
   text-align: left;
   font-family: 'Lato', sans-serif;
@@ -17,4 +45,21 @@ p {
 
 .starterImage{
   width: 16em;
+}
+
+.barButton {
+    font-family: 'Roboto Black'; 
+    background-color: #6DA6D0; 
+    border-style: solid;
+    border-color: #0F3047;
+    height: 46px;
+    border-top: none;
+    border-bottom: none; 
+    border-right:none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25pt; 
+    float:right;
 }
