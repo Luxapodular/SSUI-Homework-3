@@ -7,17 +7,50 @@
   flex: 1; 
   margin: 10px;
   margin-right:30px;
+  margin-left:0px; 
 }
 
 .flex-grid-quad .row {
   height: 100px;
   flex: 1; 
   margin: 10px;
+  margin-bottom:50px;
   background-color:#6DA6D0; 
+  flex-wrap: wrap;
 }
 
 .productLineImg {
   width: 100px;
   height: 100px; 
   float: left; 
+}
+
+.productLineText {
+  font-family: 'Roboto Black';
+  font-size:25px;
+  text-align: left; 
+  padding-left: 110px;
+  text-decoration: none;
+}
+
+.productLinePrice {
+  font-family: 'Roboto';
+  font-size: 25px; 
+  flex: 50%;
+  text-align: left;
+}
+
+.productLineStars {
+  color: gold; 
+  font-size: 25px;
+  flex: 50%; 
+  text-align: right; 
+  padding-right:10px;
+}
+
+.pageHeader {
+  font-family: 'Roboto Black';
+  font-Size:40px;
+  text-align:left;
+  color:#6DA6D0;
 }

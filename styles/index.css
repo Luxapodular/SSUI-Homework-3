@@ -4,6 +4,7 @@ body{
   width: 40%;
   margin: auto;
   background-color: #0F3047;
+  text-decoration: none; 
 }
 
 #topHeader {
@@ -107,3 +108,14 @@ p {
   font-size: 25px;
   margin-left: 20px; 
 }
+
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+} 
+
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  color: black;
+} 
