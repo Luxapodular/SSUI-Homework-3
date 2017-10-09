@@ -6,6 +6,7 @@
 
   <!--The following line loads in your CSS style sheet-->
   <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/productPage.css">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -30,12 +31,47 @@
       <button class="barButton" id="buttonHome" type="button">Home</button>
     </a>
   </div>
+  
   <div id="content">
-    <div class="imageSection">
-      <div id="productImage">
+    <div class='flex-grid-wide'>
+      <div id='carousel' class='col'> 
+        <div class='carouselRow'>
+          <img class='carouselImg' src='../assets/catHarness/catHarness_1.png'/>
+        </div>
+
+        <div class='carouselRow'>
+          <img class='carouselImg' src='../assets/catHarness/catHarness_2.png'/>
+        </div>
+
+        <div class='carouselRow'>
+          <img class='carouselImg' src='../assets/catHarness/harness_3_dexel.png'/>
+        </div>
+      </div>
+
+      <div id='mainImage' class='col'>
+          <img class='mainCarouselImg' src='../assets/catHarness/catHarness_1.png'/>
+      </div>
+
+      <div id='descriptions' class='col'>
+        <div class='productTitle'>
+          Here is a product title. 
+        </div>
+        
+        <div class='productDescription'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et sapien bibendum, feugiat nulla eu, facilisis libero. Donec facilisis lobortis nibh, at rhoncus nulla euismod sed. Phasellus molestie, tellus sit amet tempor pretium, arcu ante bibendum nisl, at feugiat lorem ligula a dolor. Vivamus iaculis turpis id quam viverra, ut ultricies mauris sagittis. In hac habitasse platea dictumst. Nunc in accumsan orci, et sollicitudin est. Nulla condimentum erat eu enim porta feugiat. Integer tincidunt, dui ac molestie laoreet, enim dolor sodales ipsum, et accumsan neque nisl non orci. Ut imperdiet metus nec blandit suscipit. Nunc rutrum tristique nibh in tincidunt. Nulla mollis risus eu sapien rutrum, et faucibus nisl ornare. Praesent at lacus nec dui blandit ultricies sit amet nec dolor. Aenean ullamcorper placerat malesuada.
+        </div>
+        
+        <div class='productSizeBar'>
+          Product Bar?
+        </div>
+        
+        <div class='productColorBar'>
+          Color Bar?
+        </div>
 
       </div>
-      <div class="imageCarousel">
+
+      <div id='buttons' class='col'> 
 
       </div>
     </div>

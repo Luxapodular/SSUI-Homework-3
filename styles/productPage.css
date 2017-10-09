@@ -1,0 +1,17 @@
+.flex-grid-wide {
+  display: flex; 
+}
+
+.flex-grid-wide .col {
+  margin: 15px; 
+}
+.carouselImg {
+  width: 148px;
+  height: 148px; 
+}
+
+.mainCarouselImg {
+  width: 450px;
+  height: 450px; 
+}
+
