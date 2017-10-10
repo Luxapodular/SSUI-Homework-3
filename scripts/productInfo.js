@@ -44,7 +44,8 @@ function addToCart () {
   var cartItem = {
     sizeTerm: localStorage.sizeTerm,
     colorTerm: localStorage.colorTerm,
-    itemTerm: localStorage.chosenItem
+    itemTerm: localStorage.chosenItem,
+    price: "$24.99"
   }
   cartItems.push(cartItem); 
   localStorage.cartItems = JSON.stringify(cartItems);
@@ -57,6 +58,12 @@ function setDefaults() {
   
   highlightSize('tiny'); 
   highlightColor('strawberry');
+}
+
+function setImages(item) {
+  console.log(item); 
+  document.getElementById("mainImg").src = "../assets/repitem/repitem_1.png".replace('repitem', item).replace('repitem', item); 
+  console.log("../assets/repitem/repitem_1.png".replace('repitem', item).replace('repitem', item));
 }
 
 function connectButtons () {
@@ -117,4 +124,5 @@ window.onload = function() {
   
   connectButtons(); 
   setDefaults(); 
+  setImages(localStorage.chosenItem); 
 }
