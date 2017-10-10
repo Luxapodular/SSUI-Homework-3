@@ -63,7 +63,12 @@ function setDefaults() {
 function setImages(item) {
   console.log(item); 
   document.getElementById("mainImg").src = "../assets/repitem/repitem_1.png".replace('repitem', item).replace('repitem', item); 
-  console.log("../assets/repitem/repitem_1.png".replace('repitem', item).replace('repitem', item));
+  
+  document.getElementById('carousel1').src = "../assets/repitem/repitem_1.png".replace('repitem', item).replace('repitem', item); 
+  
+    document.getElementById('carousel2').src = "../assets/repitem/repitem_2.png".replace('repitem', item).replace('repitem', item); 
+  
+    document.getElementById('carousel3').src = "../assets/repitem/repitem_3.png".replace('repitem', item).replace('repitem', item); 
 }
 
 function connectButtons () {
