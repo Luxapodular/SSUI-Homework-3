@@ -39,7 +39,6 @@ function addToCart () {
   }
   
   var cartItems = JSON.parse(localStorage.cartItems);
-  console.log(cartItems);
   
   var cartItem = {
     sizeTerm: localStorage.sizeTerm,
@@ -49,7 +48,6 @@ function addToCart () {
   }
   cartItems.push(cartItem); 
   localStorage.cartItems = JSON.stringify(cartItems);
-  console.log(localStorage.cartItems)
 }
 
 function setDefaults() {
@@ -61,7 +59,6 @@ function setDefaults() {
 }
 
 function setImages(item) {
-  console.log(item); 
   document.getElementById("mainImg").src = "../assets/repitem/repitem_1.png".replace('repitem', item).replace('repitem', item); 
   
   document.getElementById('carousel1').src = "../assets/repitem/repitem_1.png".replace('repitem', item).replace('repitem', item); 
