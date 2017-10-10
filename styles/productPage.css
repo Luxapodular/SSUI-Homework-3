@@ -50,6 +50,11 @@
   font-size: 25px; 
 }
 
+.productDescription {
+  height: 240px; 
+  font-size:18px;
+}
+
 .sizeBox {
   float:left;
   margin-right: 10px; 
