@@ -1,0 +1,43 @@
+.cartElem {
+  position:relative; 
+  height:100px;
+  width:900px; 
+  background-color: #6DA6D0;
+  margin: 10px;
+  padding-right: 20px; 
+  font-family: 'Roboto'; 
+}
+
+.cartElemImg {
+  width: 100px; 
+  height: 100px; 
+  float:left; 
+}
+
+.cartElemTitle {
+  font-family: 'Roboto BLack';
+  font-size: 25px; 
+  text-align: left; 
+  padding-left: 105px; 
+}
+
+.cartElemPrice {
+  position: absolute;
+  right:0px; 
+  top: 0px; 
+  padding-right:5px; 
+  padding-top:5px; 
+  font-size:20px;
+}
+
+.cartElemSize {
+  font-size: 16px; 
+  text-align: left; 
+  padding-left:105px; 
+}
+
+.cartElemColor {
+  font-size: 16px; 
+  text-align: left; 
+  padding-left:105px; 
+}

@@ -44,7 +44,7 @@ function addToCart () {
   var cartItem = {
     sizeTerm: localStorage.sizeTerm,
     colorTerm: localStorage.colorTerm,
-    itemTerm: localStorage.currentProduct
+    itemTerm: localStorage.chosenItem
   }
   cartItems.push(cartItem); 
   localStorage.cartItems = JSON.stringify(cartItems);

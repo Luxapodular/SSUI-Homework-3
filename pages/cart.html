@@ -6,11 +6,12 @@
 
   <!--The following line loads in your CSS style sheet-->
   <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/cart.css">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <!--The following line loads in your JS script-->
-  <script src="../js/shopping.js"></script>
+  <script src="../scripts/cart.js"></script>
 </head>
 
 <body>
@@ -29,6 +30,28 @@
     <a href="/index.html">
       <button class="barButton" id="buttonHome" type="button">Home</button>
     </a>
+    
+    <div id="content">
+      <div class="flex-grid-duo">
+        <div id="cartElems" class="col">
+          <div class="cartElem">
+            <img class='cartElemImg' src='../assets/catHarness/catHarness_1.png'/>
+            <div class="cartElemTitle">
+              Title
+            </div>
+            <div class="cartElemPrice">
+              Price
+            </div>
+            <div class="cartElemSize">
+              Size
+            </div>
+            <div class="cartElemColor">
+              Color
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
