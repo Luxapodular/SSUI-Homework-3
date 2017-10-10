@@ -17,9 +17,11 @@ var productInfo = {
   }
 }
 
-var currentProduct = '';
+var productSizes = ['tiny', 'small', 'medium', 'large'];
+var productColors = ['strawberry', 'blackberry', 'crazyberry', 'nightMoon', 'camoflauge', 'nightMoon', 'fireOrange'];
 
-function getInfo(product) {
+// Set product text info
+function setInfo(product) {
   var info = productInfo[product];
   var title = info.title;
   var desc = info.description; 
@@ -31,10 +33,88 @@ function getInfo(product) {
   titleElem.innerHTML = title;
 }
 
+function addToCart () {
+  if (localStorage.cartItems === undefined) {
+    localStorage.cartItems = JSON.stringify([]);
+  }
+  
+  var cartItems = JSON.parse(localStorage.cartItems);
+  console.log(cartItems);
+  
+  var cartItem = {
+    sizeTerm: localStorage.sizeTerm,
+    colorTerm: localStorage.colorTerm,
+    itemTerm: localStorage.currentProduct
+  }
+  cartItems.push(cartItem); 
+  localStorage.cartItems = JSON.stringify(cartItems);
+  console.log(localStorage.cartItems)
+}
+
+function setDefaults() {
+  localStorage.sizeTerm = 'tiny'; 
+  localStorage.colorTerm = 'strawberry'; 
+  
+  highlightSize('tiny'); 
+  highlightColor('strawberry');
+}
+
+function connectButtons () {
+  connectCartButtons(); 
+  connectSizeButtons();
+  connectColorButtons(); 
+}
+
+function connectSizeButtons() {
+  productSizes.forEach(function(item) {
+    document.getElementById(item).addEventListener('mouseup', function(){ 
+      localStorage.sizeTerm = item;
+      highlightSize(item); 
+    });
+  });
+}
+
+function connectColorButtons() {
+  productColors.forEach(function(item) {
+    document.getElementById(item).addEventListener('mouseup', function(){ 
+      localStorage.colorTerm = item;
+      highlightColor(item); 
+    });
+  });
+}
+
+function connectCartButtons() {
+  elems = document.getElementsByClassName('addToCartButton');
+  
+  // convert nodeList to array
+  [].slice.call(elems).forEach(function(element) {
+    element.addEventListener('mouseup', function () { addToCart(); });
+  });
+}
+
+function highlightSize(item) {
+  productSizes.forEach(function(item) {
+    document.getElementById(item).style.borderColor = "white";
+    });
+
+  document.getElementById(item).style.borderColor = "yellow"; 
+}
+
+function highlightColor(item) {
+  productColors.forEach(function(item) {
+    document.getElementById(item).style.borderColor = "white";
+  });
+  
+  document.getElementById(item).style.borderColor = "yellow"; 
+}
+
 window.onload = function() {
   if (localStorage.chosenItem === undefined) {
     return; 
   }
   
-  getInfo(localStorage.chosenItem); 
+  setInfo(localStorage.chosenItem);
+  
+  connectButtons(); 
+  setDefaults(); 
 }

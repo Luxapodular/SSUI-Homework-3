@@ -62,11 +62,15 @@
   height: 68px;
   background-color: #6DA6D0;
   border-radius: 19px; 
-  border: 1px solid; 
+  border: 3px solid; 
   border-color: white; 
   color: black; 
   text-align: center;
   vertical-align: middle; 
+}
+
+.sizeBox:hover {
+  border-color: yellow !important;
 }
 
 .boxContainer {
@@ -104,3 +108,5 @@
 #fireOrange {
   background-color: #E25822;
 }
+
+
